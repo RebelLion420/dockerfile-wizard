@@ -6,7 +6,7 @@ image_config: &image_config
 
   IMAGE_NAME: kbld
 
-  IMAGE_TAG: 200420
+  IMAGE_TAG: 200608
 
   # NOTE: if you're modifying this config.yml file manually
   # rather than using the included setup script,
@@ -56,7 +56,7 @@ jobs:
 
   test_image:
     docker:
-      - image: $DOCKER_USERNAME/kbld:200420
+      - image: $DOCKER_USERNAME/kbld:200608
         environment:
           <<: *image_config
 
